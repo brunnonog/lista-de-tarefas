@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div id="container">
+    <div id="menu">
+      <img src="perfil.jpg" alt="Foto de Perfil">
+      <h2><b>Nome</b></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam egestas, enim non dignissim ultricies, tortor arcu pulvinar lectus, vel lacinia purus nulla a sem. Fusce ut ipsum dignissim, feugiat nibh quis, vulputate lacus. Mauris sed nibh quam. Cras eleifend sed neque at tempor. In ullamcorper libero at facilisis scelerisque. Pellentesque gravida tortor at tempus pellentesque. Donec faucibus pulvinar elit eu accumsan.</p>
+      <ul id="link">
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a href="#">Link4</a></li>
+      </ul>
+    </div>
+
+    <div id="cont-princ">
+      <h1>Lista de Tarefas</h1>
+      <div id="dia-noite">
+        <table>
+          <tr>
+            <th id="dia">Dia ☀️</th>
+            <th id="noite">Noite 🌙</th>
+          </tr>
+          <tr>
+            <td id="dia">
+              <ul class="tarefas-list" id="tarefas-dia">
+                <!--tarefas adicionadas no JavaScript-->
+              </ul>
+              <input type="text" id="txt-dia" class="ad-tarefa" placeholder="Adicionar Tarefa">
+              <button class="botao-ad-tarefa" onclick="adicionarTarefa('tarefas-dia', 'txt-dia')">Adicionar Tarefa</button>
+            </td>
+            <td id="noite">
+              <ul class="tarefas-list" id="tarefas-noite">
+                <!--tarefas adicionadas no JavaScript-->
+              </ul>
+              <input type="text" id="txt-noite" class="ad-tarefa" placeholder="Adicionar Tarefa">
+              <button class="botao-ad-tarefa" onclick="adicionarTarefa('tarefas-noite', 'txt-noite')">Adicionar Tarefa</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
